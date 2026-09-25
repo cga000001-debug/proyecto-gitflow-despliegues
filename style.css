@@ -1,0 +1,42 @@
+.mi-header {
+    display: flex;
+    justify-content: space-between;
+    /* Empuja el logo a la izquierda y el menú a la derecha */
+    align-items: center;
+    /* Alinea todo verticalmente al centro */
+    padding: 15px 30px;
+    /* Da un poco de espacio alrededor del header */
+}
+
+.logo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    /* Crea espacio entre "Inicio", "Servicios" y "Contacto" */
+}
+
+/* Estilos básicos para que los enlaces se vean bien (opcional) */
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+.mi-header {
+    background-color: #c5b28b;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu a.activo {
+    font-weight: 900;
+    color: black;
+}
