@@ -52,6 +52,60 @@ body {
     color: black;
 }
 
+/*Estilos del carrusel manual*/
+
+.carrusel {
+    width: 800px;
+    height: 500px;
+}
+
+.carrusel-track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Estilos de botones del carrusel manual*/
+.carrusel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: none;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    font-size: 30px;
+    padding: 10px 15px;
+
+    cursor: pointer;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+#content {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
 #form_newsletter {
     display: flex;
     justify-content: center;
