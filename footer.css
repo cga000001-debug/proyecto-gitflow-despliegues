@@ -12,14 +12,14 @@ footer * {
 }
 
 footer {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
     padding: 40px 0px;
 
-    background-color: bisque;
+    background-color: #c5b28b;
 }
 
 footer img {

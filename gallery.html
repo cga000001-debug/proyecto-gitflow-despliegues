@@ -1,22 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Píxeles y Sombras</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="footer.css">
-    <title>Document</title>
 </head>
-<body>
 
+<body>
+    <header class="mi-header">
+        <div class="logo">
+            <h1>Píxeles y Sombras</h1>
+        </div>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="aboutUs.html">About us</a>
+            <a href="contact.html">Contacto</a>
+            <a href="gallery.html" class="activo">Galería</a>
+        </nav>
+    </header>
+
+    <div id="content">
+        <section class="carrusel">
+            <div class="carrusel-track">
+                <div class="slide">
+                    <img src="imagenes/carrusel-1.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="imagenes/carrusel-2.png" alt="">
+                </div>
+
+                <div class="slide">
+                    <img src="imagenes/carrusel-3.png" alt="">
+                </div>
+            </div>
+
+            <button class="anterior">❮</button>
+            <button class="next">❯</button>
+
+            <script>
+                const track = document.querySelector(".carrusel-track");
+                const slides = document.querySelectorAll(".slide");
+
+                const previousButton = document.querySelector(".anterior");
+                const nextButton = document.querySelector(".next");
+
+                let currentSlide = 0;
+
+                function showSlide() {
+                    track.style.transform =
+                        `translateX(-${currentSlide * 100}%)`;
+                }
+
+                nextButton.addEventListener("click", function () {
+
+                    currentSlide++;
+
+                    if (currentSlide >= slides.length) {
+                        currentSlide = 0;
+                    }
+
+                    showSlide();
+                });
+
+                previousButton.addEventListener("click", function () {
+
+                    currentSlide--;
+
+                    if (currentSlide < 0) {
+                        currentSlide = slides.length - 1;
+                    }
+
+                    showSlide();
+                });
+            </script>
+        </section>
+
+
+    </div>
     <footer>
-        <img src="./media/img/0a01070f52d9351275bbb461bc712b0a.jpg" alt="Logo">
+        <img src="" alt="Píxeles y Sombras">
         <nav>
             <a href="./index.html">Home</a>
             <a href="./aboutUs.html">About Us</a>
             <a href="./gallery.html">Gallery</a>
             <a href="./contact.html">Contact</a>
         </nav>
+        <p class="version">Versión 1.0.0</p>
     </footer>
-    
 </body>
+
 </html>
