@@ -306,6 +306,18 @@ body {
   word-wrap: break-word;
 }
 
+.reviews {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.reviews h2 {
+    margin-bottom: 25px;
+}
+
+.review {
+    padding: 20px;
+    margin-bottom: 20px;
 .contact-info {
     width: 100%;
     max-width: 800px;
@@ -316,6 +328,30 @@ body {
     background-color: #f5f5f5;
     color: #222;
 
+    border-radius: 8px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.review-header h3 {
+    margin: 0;
+}
+
+.stars {
+    color: #f5b301;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.review p {
+    margin: 0;
+    line-height: 1.5;
     border-radius: 10px;
 }
 
