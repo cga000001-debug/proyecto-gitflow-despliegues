@@ -6,6 +6,7 @@
     /* Alinea todo verticalmente al centro */
     padding: 15px 30px;
     /* Da un poco de espacio alrededor del header */
+    background-color: #c5b28b;
 }
 
 .logo {
@@ -26,11 +27,6 @@
     font-weight: lighter;
 }
 
-.mi-header {
-    background-color: #c5b28b;
-
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -39,4 +35,37 @@ body {
 .menu a.activo {
     font-weight: 900;
     color: black;
+}
+
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    /* Este espacio empuja las secciones hacia adentro para que no toquen el borde */
+    background-color: #a0a0a0;
+    /* El color de fondo gris más oscuro del contenedor */
+}
+
+.aboutUsFoto {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente el texto y la foto */
+    gap: 40px;
+    /* Crea un espacio de 40px entre el texto y la imagen */
+    padding: 40px;
+    background-color: #e0e0e0;
+    /* Mantiene el fondo gris claro de tus secciones */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* Hacemos que el texto y la imagen ocupen exactamente el mismo ancho (50/50) */
+.texto-about,
+.imagen-about {
+    flex: 1;
+}
+
+/* Evitamos que la imagen se salga de su contenedor y le damos un toque elegante */
+.imagen-about img {
+    width: 100%;
+    height: auto;
 }
