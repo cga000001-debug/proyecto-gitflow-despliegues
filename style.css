@@ -53,8 +53,6 @@ body {
     margin: 0 auto;
     padding: 30px;
     /* Este espacio empuja las secciones hacia adentro para que no toquen el borde */
-    background-color: #a0a0a0;
-    /* El color de fondo gris más oscuro del contenedor */
 }
 
 .aboutUsFoto {
@@ -79,6 +77,8 @@ body {
 .imagen-about img {
     width: 100%;
     height: auto;
+}
+
 /*Estilos del carrusel manual*/
 
 .carrusel {
