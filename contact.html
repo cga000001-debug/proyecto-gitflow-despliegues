@@ -47,6 +47,39 @@
         </section>
     </div>
 
+    <div id="content">
+        <section class="contact-form-container">
+            <h2>Envíanos un mensaje</h2>
+
+            <form action="#" method="POST">
+                <div class="field-group form-full-width">
+                    <label class="label" for="nombre">Nombre:</label>
+                    <input class="input" type="text" id="nombre" name="nombre" required placeholder="Tu nombre">
+                </div>
+
+                <div class="field-group form-full-width">
+                    <label class="label" for="email">Email:</label>
+                    <input class="input" type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+
+                <div class="field-group form-full-width">
+                    <label class="label" for="asunto">Asunto:</label>
+                    <input class="input" type="text" id="asunto" name="asunto" placeholder="¿En qué podemos ayudarte?">
+                </div>
+
+                <div class="field-group form-full-width">
+                    <label class="label" for="mensaje">Mensaje:</label>
+                    <!-- Usamos la clase input, pero siendo un textarea -->
+                    <textarea class="input textarea-input" id="mensaje" name="mensaje" required
+                        placeholder="Escribe tu mensaje aquí..."></textarea>
+                </div>
+
+                <div class="button-row form-full-width" style="margin-top: 20px;">
+                    <button type="submit" class="button-primary">Enviar Mensaje</button>
+                </div>
+            </form>
+    </div>
+
     <footer>
         <img src="" alt="Píxeles y Sombras">
         <nav>

@@ -1,12 +1,12 @@
 :root {
-  --Text-Default-Default: #1E1E1E;
-  --Text-Default-Tertiary: #B3B3B3;
-  --Background-Default-Default: #ffffff;
-  --Border-Default-Default: #D9D9D9;
-  --Background-Brand-Default: #2C2C2C;
-  --Border-Brand-Default: #2C2C2C;
-  --Text-Brand-On-Brand: #F5F5F5;
-  --Icon-Brand-On-Brand: #F5F5F5;
+    --Text-Default-Default: #1E1E1E;
+    --Text-Default-Tertiary: #B3B3B3;
+    --Background-Default-Default: #ffffff;
+    --Border-Default-Default: #D9D9D9;
+    --Background-Brand-Default: #2C2C2C;
+    --Border-Brand-Default: #2C2C2C;
+    --Text-Brand-On-Brand: #F5F5F5;
+    --Icon-Brand-On-Brand: #F5F5F5;
 }
 
 .mi-header {
@@ -136,6 +136,7 @@ body {
     max-width: 100%;
     margin: 0 auto;
 }
+
 #form_newsletter {
     display: flex;
     justify-content: center;
@@ -143,182 +144,187 @@ body {
 }
 
 .newsletter-card {
-  width: 425px;
-  height: 500px;
-  padding-top: 36px;
-  padding-bottom: 36px;
-  padding-left: 40px;
-  padding-right: 44px;
-  background: white;
-  border-radius: 10px;
-  outline: 1px #D9D9D9 solid;
-  outline-offset: -1px;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 31px;
-  display: inline-flex;
+    width: 425px;
+    height: 500px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 40px;
+    padding-right: 44px;
+    background: white;
+    border-radius: 10px;
+    outline: 1px #D9D9D9 solid;
+    outline-offset: -1px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 31px;
+    display: inline-flex;
 }
 
 .field-group {
-  width: 429px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
+    width: 429px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .title {
-  align-self: stretch;
-  margin: 0;
-  color: var(--Text-Default-Default);
-  font-size: 32px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 38.40px;
-  word-wrap: break-word;
+    align-self: stretch;
+    margin: 0;
+    color: var(--Text-Default-Default);
+    font-size: 32px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 38.40px;
+    word-wrap: break-word;
 }
 
 .subtitle {
-  align-self: stretch;
-  margin: 0;
-  color: var(--Text-Default-Default);
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 22.40px;
-  word-wrap: break-word;
+    align-self: stretch;
+    margin: 0;
+    color: var(--Text-Default-Default);
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
 }
 
 .label {
-  align-self: stretch;
-  color: var(--Text-Default-Default);
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 22.40px;
-  word-wrap: break-word;
+    align-self: stretch;
+    color: var(--Text-Default-Default);
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
 }
 
 .input {
-  align-self: stretch;
-  min-width: 120px;
-  box-sizing: border-box;
-  padding: 12px 16px;
-  background: var(--Background-Default-Default);
-  border: none;
-  outline: 1px var(--Border-Default-Default) solid;
-  outline-offset: -0.50px;
-  border-radius: 8px;
-  color: var(--Text-Default-Default);
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 16px;
+    align-self: stretch;
+    min-width: 120px;
+    box-sizing: border-box;
+    padding: 12px 16px;
+    background: var(--Background-Default-Default);
+    border: none;
+    outline: 1px var(--Border-Default-Default) solid;
+    outline-offset: -0.50px;
+    border-radius: 8px;
+    color: var(--Text-Default-Default);
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 16px;
 }
 
 .input::placeholder {
-  color: var(--Text-Default-Tertiary);
+    color: var(--Text-Default-Tertiary);
 }
 
 .checkbox-group {
-  width: 429px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    width: 429px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .checkbox-row {
-  min-width: 120px;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
+    min-width: 120px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
 }
 
 .checkbox-input {
-  appearance: none;
-  -webkit-appearance: none;
-  width: 16px;
-  height: 16px;
-  margin: 0;
-  flex-shrink: 0;
-  background: var(--Background-Brand-Default);
-  border-radius: 4px;
-  position: relative;
-  cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    flex-shrink: 0;
+    background: var(--Background-Brand-Default);
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
 }
 
 .checkbox-input::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 10.67px;
-  height: 7.33px;
-  left: 2.67px;
-  top: 4px;
-  border: 1.60px solid var(--Icon-Brand-On-Brand);
-  border-top: none;
-  border-right: none;
-  transform: rotate(-45deg) translateY(-2px);
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10.67px;
+    height: 7.33px;
+    left: 2.67px;
+    top: 4px;
+    border: 1.60px solid var(--Icon-Brand-On-Brand);
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg) translateY(-2px);
 }
 
 .checkbox-label {
-  flex: 1 1 0;
-  color: var(--Text-Default-Default);
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 22.40px;
-  word-wrap: break-word;
+    flex: 1 1 0;
+    color: var(--Text-Default-Default);
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22.40px;
+    word-wrap: break-word;
 }
 
 .button-row {
-  width: 429px;
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
+    width: 429px;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .button-primary {
-  flex: 1 1 0;
-  padding: 12px;
-  background: var(--Background-Brand-Default);
-  border: none;
-  outline: 1px var(--Border-Brand-Default) solid;
-  outline-offset: -1px;
-  border-radius: 8px;
-  color: var(--Text-Brand-On-Brand);
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 16px;
-  cursor: pointer;
+    flex: 1 1 0;
+    padding: 12px;
+    background: var(--Background-Brand-Default);
+    border: none;
+    outline: 1px var(--Border-Brand-Default) solid;
+    outline-offset: -1px;
+    border-radius: 8px;
+    color: var(--Text-Brand-On-Brand);
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 16px;
+    cursor: pointer;
 }
 
 .terms {
-  margin: 0;
-  color: #757575;
-  font-size: 14px;
-  font-family: Inter;
-  font-weight: 600;
-  line-height: 19.60px;
-  word-wrap: break-word;
+    margin: 0;
+    color: #757575;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 19.60px;
+    word-wrap: break-word;
 }
 
 .reviews {
     width: 100%;
     margin-top: 50px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    margin: 10px;
 }
 
 .reviews h2 {
     margin-bottom: 25px;
+    padding: 5px;
 }
 
 .review {
     padding: 20px;
     margin-bottom: 20px;
 }
+
 .contact-info {
     width: 100%;
     max-width: 800px;
@@ -378,58 +384,63 @@ body {
     margin: 0;
     line-height: 1.5;
 }
+
 /* Galeria de imágenes*/
 :root {
-  --alto-fila: 220px;   /* alto de cada imagen */
-  --espacio: 12px;      /* separación entre imágenes */
+    --alto-fila: 220px;
+    /* alto de cada imagen */
+    --espacio: 12px;
+    /* separación entre imágenes */
 }
 
 .titulo-galeria {
-  max-width: 640px;
-  margin: 0 auto 16px;
-  font-size: 1.5rem;
-  text-align: center;
+    max-width: 640px;
+    margin: 0 auto 16px;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .galeria {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: var(--espacio);
-  background: #fff;
-  border-radius: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--espacio);
+    background: #fff;
+    border-radius: 8px;
 
-  /* Altura visible: una fila completa + un poco de la siguiente.
+    /* Altura visible: una fila completa + un poco de la siguiente.
      Cambia el 1.4 para ver más o menos de la fila de abajo. */
-  height: calc(var(--alto-fila) * 1.4 + var(--espacio) * 2);
-  overflow-y: auto;
+    height: calc(var(--alto-fila) * 1.4 + var(--espacio) * 2);
+    overflow-y: auto;
 
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);   /* 2 imágenes por fila */
-  grid-auto-rows: var(--alto-fila);
-  gap: var(--espacio);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 imágenes por fila */
+    grid-auto-rows: var(--alto-fila);
+    gap: var(--espacio);
 }
 
 .galeria img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;   /* recorta sin deformar */
-  display: block;
-  border-radius: 4px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* recorta sin deformar */
+    display: block;
+    border-radius: 4px;
 }
 
 /*Footer CSS*/
 
 footer * {
-  margin: 0px;
-  padding: 0;
-  box-sizing: border-box;
-  border: none;
-  list-style: none;
-  text-decoration: none;
-  text-align: start;
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    text-align: start;
 
-  font-family: Roboto, sans-serif;
-  color: rgb(17, 17, 17);
+    font-family: Roboto, sans-serif;
+    color: rgb(17, 17, 17);
 }
 
 footer {
@@ -446,9 +457,41 @@ footer {
 footer img {
     width: 20vw;
 }
-footer nav{
+
+footer nav {
     display: flex;
     justify-content: center;
     gap: 20px;
     width: 100%;
+}
+
+/* Mismo diseño que tu .contact-info para mantener coherencia */
+.contact-form-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Fuerza a los grupos de tu newsletter a ocupar el 100% en este formulario */
+.form-full-width {
+    width: 100% !important;
+    margin-bottom: 15px;
+}
+
+/* Ajustes específicos para que la caja de texto (textarea) se vea bien con tu clase .input */
+textarea.textarea-input {
+    min-height: 120px;
+    resize: vertical;
+    /* Permite al usuario hacer la caja más grande hacia abajo */
+    line-height: 1.5;
+    /* Sobrescribe el line-height: 16px de tu .input normal */
+    font-family: Inter, sans-serif;
 }
