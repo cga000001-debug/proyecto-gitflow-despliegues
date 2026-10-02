@@ -318,6 +318,7 @@ body {
 .review {
     padding: 20px;
     margin-bottom: 20px;
+}
 .contact-info {
     width: 100%;
     max-width: 800px;
@@ -376,6 +377,7 @@ body {
 .contact-item p {
     margin: 0;
     line-height: 1.5;
+}
 /* Galeria de imágenes*/
 :root {
   --alto-fila: 220px;   /* alto de cada imagen */
@@ -413,4 +415,40 @@ body {
   object-fit: cover;   /* recorta sin deformar */
   display: block;
   border-radius: 4px;
+}
+
+/*Footer CSS*/
+
+footer * {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  text-align: start;
+
+  font-family: Roboto, sans-serif;
+  color: rgb(17, 17, 17);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0px;
+
+    background-color: #c5b28b;
+}
+
+footer img {
+    width: 20vw;
+}
+footer nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
