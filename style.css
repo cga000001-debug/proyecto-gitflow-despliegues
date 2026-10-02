@@ -83,6 +83,7 @@ body {
 
 /*Estilos del carrusel manual*/
 .carrusel {
+    overflow: hidden;
   position: relative;
   width: 100%;
   max-width: 800px;
@@ -571,9 +572,30 @@ footer nav {
   height: 100%;
   object-fit: cover;
 }
-footer nav{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
+
+/*galeria2*/
+
+
+.galeria2 {
+width: 100%;
+
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(8, 1fr);
+grid-column-gap: 20px;
+grid-row-gap: 0px;
 }
+
+.galeria2 img {
+    width: 100%;
+  object-fit: cover;
+}
+
+.galeria2 .div1 { grid-area: 1 / 3 / 6 / 6; }
+.galeria2 .div2 { grid-area: 1 / 1 / 3 / 3; }
+.galeria2 .div3 { grid-area: 4 / 1 / 6 / 3; }
+.galeria2 .div4 { grid-area: 7 / 1 / 9 / 2; }
+.galeria2 .div5 { grid-area: 7 / 2 / 9 / 3; }
+.galeria2 .div6 { grid-area: 7 / 3 / 9 / 4; }
+.galeria2 .div7 { grid-area: 7 / 4 / 9 / 5; }
+.galeria2 .div8 { grid-area: 7 / 5 / 9 / 6; }
