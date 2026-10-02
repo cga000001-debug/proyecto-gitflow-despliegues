@@ -1,164 +1,165 @@
 :root {
-    --Text-Default-Default: #1E1E1E;
-    --Text-Default-Tertiary: #B3B3B3;
-    --Background-Default-Default: #ffffff;
-    --Border-Default-Default: #D9D9D9;
-    --Background-Brand-Default: #2C2C2C;
-    --Border-Brand-Default: #2C2C2C;
-    --Text-Brand-On-Brand: #F5F5F5;
-    --Icon-Brand-On-Brand: #F5F5F5;
+  --Text-Default-Default: #1e1e1e;
+  --Text-Default-Tertiary: #b3b3b3;
+  --Background-Default-Default: #ffffff;
+  --Border-Default-Default: #d9d9d9;
+  --Background-Brand-Default: #2c2c2c;
+  --Border-Brand-Default: #2c2c2c;
+  --Text-Brand-On-Brand: #f5f5f5;
+  --Icon-Brand-On-Brand: #f5f5f5;
 }
 
 .mi-header {
-    display: flex;
-    justify-content: space-between;
-    /* Empuja el logo a la izquierda y el menú a la derecha */
-    align-items: center;
-    /* Alinea todo verticalmente al centro */
-    padding: 15px 30px;
-    /* Da un poco de espacio alrededor del header */
-    background-color: #c5b28b;
+  display: flex;
+  justify-content: space-between;
+  /* Empuja el logo a la izquierda y el menú a la derecha */
+  align-items: center;
+  /* Alinea todo verticalmente al centro */
+  padding: 15px 30px;
+  /* Da un poco de espacio alrededor del header */
+  background-color: #c5b28b;
 }
 
 .logo {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .menu {
-    display: flex;
-    gap: 20px;
-    /* Crea espacio entre "Inicio", "Servicios" y "Contacto" */
+  display: flex;
+  gap: 20px;
+  /* Crea espacio entre "Inicio", "Servicios" y "Contacto" */
 }
 
 /* Estilos básicos para que los enlaces se vean bien (opcional) */
 .menu a {
-    text-decoration: none;
-    color: #333;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: lighter;
+  text-decoration: none;
+  color: #333;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .menu a.activo {
-    font-weight: 900;
-    color: black;
+  font-weight: 900;
+  color: black;
 }
 
 #content {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 30px;
-    /* Este espacio empuja las secciones hacia adentro para que no toquen el borde */
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  /* Este espacio empuja las secciones hacia adentro para que no toquen el borde */
 }
 
 .aboutUsFoto {
-    display: flex;
-    align-items: center;
-    /* Centra verticalmente el texto y la foto */
-    gap: 40px;
-    /* Crea un espacio de 40px entre el texto y la imagen */
-    padding: 40px;
-    background-color: #e0e0e0;
-    /* Mantiene el fondo gris claro de tus secciones */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  display: flex;
+  align-items: center;
+  /* Centra verticalmente el texto y la foto */
+  gap: 40px;
+  /* Crea un espacio de 40px entre el texto y la imagen */
+  padding: 40px;
+  background-color: #e0e0e0;
+  /* Mantiene el fondo gris claro de tus secciones */
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 /* Hacemos que el texto y la imagen ocupen exactamente el mismo ancho (50/50) */
 .texto-about,
 .imagen-about {
-    flex: 1;
+  flex: 1;
 }
 
 /* Evitamos que la imagen se salga de su contenedor y le damos un toque elegante */
 .imagen-about img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 /*Estilos del carrusel manual*/
 .carrusel {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    width: 800px;
-    height: 500px;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  width: 800px;
+  height: 500px;
 }
 
 .carrusel-track {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s ease;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
 }
 
 .slide {
-    min-width: 100%;
-    height: 100%;
+  min-width: 100%;
+  height: 100%;
 }
 
 .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*Estilos de botones del carrusel manual*/
 .carrusel button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
-    border: none;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 
-    font-size: 30px;
-    padding: 10px 15px;
+  font-size: 30px;
+  padding: 10px 15px;
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .anterior {
-    left: 10px;
+  left: 10px;
 }
 
 .next {
-    right: 10px;
+  right: 10px;
 }
 
+/* Formato de la newsletter */
 #content {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 #form_newsletter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .newsletter-card {
-    width: 425px;
-    height: 500px;
-    padding-top: 36px;
-    padding-bottom: 36px;
-    padding-left: 40px;
-    padding-right: 44px;
-    background: white;
-    border-radius: 10px;
-    outline: 1px #D9D9D9 solid;
-    outline-offset: -1px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 31px;
-    display: inline-flex;
+  width: 425px;
+  height: 500px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-left: 40px;
+  padding-right: 44px;
+  background: white;
+  border-radius: 10px;
+  outline: 1px #d9d9d9 solid;
+  outline-offset: -1px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 31px;
+  display: inline-flex;
 }
 
 .field-group {
@@ -170,52 +171,52 @@ body {
 }
 
 .title {
-    align-self: stretch;
-    margin: 0;
-    color: var(--Text-Default-Default);
-    font-size: 32px;
-    font-family: Inter;
-    font-weight: 400;
-    line-height: 38.40px;
-    word-wrap: break-word;
+  align-self: stretch;
+  margin: 0;
+  color: var(--Text-Default-Default);
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 38.4px;
+  word-wrap: break-word;
 }
 
 .subtitle {
-    align-self: stretch;
-    margin: 0;
-    color: var(--Text-Default-Default);
-    font-size: 16px;
-    font-family: Inter;
-    font-weight: 400;
-    line-height: 22.40px;
-    word-wrap: break-word;
+  align-self: stretch;
+  margin: 0;
+  color: var(--Text-Default-Default);
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
 }
 
 .label {
-    align-self: stretch;
-    color: var(--Text-Default-Default);
-    font-size: 16px;
-    font-family: Inter;
-    font-weight: 400;
-    line-height: 22.40px;
-    word-wrap: break-word;
+  align-self: stretch;
+  color: var(--Text-Default-Default);
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
 }
 
 .input {
-    align-self: stretch;
-    min-width: 120px;
-    box-sizing: border-box;
-    padding: 12px 16px;
-    background: var(--Background-Default-Default);
-    border: none;
-    outline: 1px var(--Border-Default-Default) solid;
-    outline-offset: -0.50px;
-    border-radius: 8px;
-    color: var(--Text-Default-Default);
-    font-size: 16px;
-    font-family: Inter;
-    font-weight: 400;
-    line-height: 16px;
+  align-self: stretch;
+  min-width: 120px;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  background: var(--Background-Default-Default);
+  border: none;
+  outline: 1px var(--Border-Default-Default) solid;
+  outline-offset: -0.5px;
+  border-radius: 8px;
+  color: var(--Text-Default-Default);
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .input::placeholder {
@@ -238,40 +239,50 @@ body {
 }
 
 .checkbox-input {
-    appearance: none;
-    -webkit-appearance: none;
-    width: 16px;
-    height: 16px;
-    margin: 0;
-    flex-shrink: 0;
-    background: var(--Background-Brand-Default);
-    border-radius: 4px;
-    position: relative;
-    cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  flex-shrink: 0;
+  background: var(--Background-Default-Default);
+  outline: 1px var(--Border-Default-Default) solid;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox-input:checked {
+  background: var(--Background-Brand-Default);
+  outline: 1px var(--Border-Brand-Default) solid;
 }
 
 .checkbox-input::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 10.67px;
-    height: 7.33px;
-    left: 2.67px;
-    top: 4px;
-    border: 1.60px solid var(--Icon-Brand-On-Brand);
-    border-top: none;
-    border-right: none;
-    transform: rotate(-45deg) translateY(-2px);
+  content: "";
+  display: none;
+  position: absolute;
+  width: 10.67px;
+  height: 7.33px;
+  left: 2.67px;
+  top: 4px;
+  border: 1.6px solid var(--Icon-Brand-On-Brand);
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg) translateY(-2px);
+}
+
+.checkbox-input:checked::after {
+  display: block;
 }
 
 .checkbox-label {
-    flex: 1 1 0;
-    color: var(--Text-Default-Default);
-    font-size: 16px;
-    font-family: Inter;
-    font-weight: 400;
-    line-height: 22.40px;
-    word-wrap: break-word;
+  flex: 1 1 0;
+  color: var(--Text-Default-Default);
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 22.4px;
+  word-wrap: break-word;
 }
 
 .button-row {
@@ -298,99 +309,93 @@ body {
 }
 
 .terms {
-    margin: 0;
-    color: #757575;
-    font-size: 14px;
-    font-family: Inter;
-    font-weight: 600;
-    line-height: 19.60px;
-    word-wrap: break-word;
+  margin: 0;
+  color: #757575;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 19.6px;
+  word-wrap: break-word;
 }
 
 .reviews {
-    width: 100%;
-    margin-top: 50px;
-    border: 1px solid #D9D9D9;
-    border-radius: 10px;
-    margin: 10px;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .reviews h2 {
-    margin-bottom: 25px;
-    padding: 5px;
+  margin-bottom: 25px;
 }
 
 .review {
-    padding: 20px;
-    margin-bottom: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-info {
-    width: 100%;
-    max-width: 800px;
-    margin: 50px auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
 
-    padding: 30px;
+  padding: 30px;
 
-    background-color: #f5f5f5;
-    color: #222;
+  background-color: #f5f5f5;
+  color: #222;
 
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .review-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .review-header h3 {
-    margin: 0;
+  margin: 0;
 }
 
 .stars {
-    color: #f5b301;
-    font-size: 20px;
-    letter-spacing: 2px;
+  color: #f5b301;
+  font-size: 20px;
+  letter-spacing: 2px;
 }
 
 .review p {
-    margin: 0;
-    line-height: 1.5;
-    border-radius: 10px;
+  margin: 0;
+  line-height: 1.5;
+  border-radius: 10px;
 }
 
 .contact-info h2 {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .contact-item {
-    padding: 15px 0;
-    border-bottom: 1px solid #ccc;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
 }
 
 .contact-item:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .contact-item h3 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .contact-item p {
-    margin: 0;
-    line-height: 1.5;
+  margin: 0;
+  line-height: 1.5;
 }
 
 /* Galeria de imágenes*/
 :root {
-    --alto-fila: 220px;
-    /* alto de cada imagen */
-    --espacio: 12px;
-    /* separación entre imágenes */
+  --alto-fila: 220px; /* alto de cada imagen */
+  --espacio: 12px; /* separación entre imágenes */
 }
 
 .titulo-galeria {
@@ -412,20 +417,18 @@ body {
     height: calc(var(--alto-fila) * 1.4 + var(--espacio) * 2);
     overflow-y: auto;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* 2 imágenes por fila */
-    grid-auto-rows: var(--alto-fila);
-    gap: var(--espacio);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 imágenes por fila */
+  grid-auto-rows: var(--alto-fila);
+  gap: var(--espacio);
 }
 
 .galeria img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* recorta sin deformar */
-    display: block;
-    border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* recorta sin deformar */
+  display: block;
+  border-radius: 4px;
 }
 
 /*Footer CSS*/
@@ -444,54 +447,47 @@ footer * {
 }
 
 footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    padding: 40px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0px;
 
-    background-color: #c5b28b;
+  background-color: #c5b28b;
 }
 
 footer img {
-    width: 20vw;
+  width: 20vw;
 }
-
 footer nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
 }
 
-/* Mismo diseño que tu .contact-info para mantener coherencia */
-.contact-form-container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto 50px auto;
-    padding: 30px;
-    background-color: #f5f5f5;
-    border-radius: 8px;
-}
+/*location*/
 
-.contact-form-container h2 {
-    text-align: center;
-    margin-bottom: 30px;
+.location {
+  width: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
-
-/* Fuerza a los grupos de tu newsletter a ocupar el 100% en este formulario */
-.form-full-width {
-    width: 100% !important;
-    margin-bottom: 15px;
+.location figure {
+  display: flex;
 }
-
-/* Ajustes específicos para que la caja de texto (textarea) se vea bien con tu clase .input */
-textarea.textarea-input {
-    min-height: 120px;
-    resize: vertical;
-    /* Permite al usuario hacer la caja más grande hacia abajo */
-    line-height: 1.5;
-    /* Sobrescribe el line-height: 16px de tu .input normal */
-    font-family: Inter, sans-serif;
+.location figcaption {
+  width: 20%;
+}
+.location a {
+    width: 80%;
+    aspect-ratio: 4/3;
+}
+.location img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
