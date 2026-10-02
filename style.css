@@ -2,11 +2,13 @@
   --Text-Default-Default: #1e1e1e;
   --Text-Default-Tertiary: #b3b3b3;
   --Background-Default-Default: #ffffff;
-  --Border-Default-Default: #d9d9d9;
-  --Background-Brand-Default: #2c2c2c;
-  --Border-Brand-Default: #2c2c2c;
-  --Text-Brand-On-Brand: #f5f5f5;
-  --Icon-Brand-On-Brand: #f5f5f5;
+  --Border-Default-Default: #D9D9D9;
+  --Background-Brand-Default: #2C2C2C;
+  --Border-Brand-Default: #2C2C2C;
+  --Text-Brand-On-Brand: #F5F5F5;
+  --Icon-Brand-On-Brand: #F5F5F5;
+  --ancho: 640px;
+  --alto: 360px;
 }
 
 .mi-header {
@@ -318,6 +320,84 @@ body {
   word-wrap: break-word;
 }
 
+/* Carrusel automático */
+.carrusel-auto {
+  position: relative;
+  width: var(--ancho);
+  max-width: 92vw;
+  height: var(--alto);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #000;
+}
+
+.carrusel-auto-pista {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carrusel-auto-pista img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  display: block;
+}
+
+.carrusel-auto-flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrusel-auto-flecha:hover {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.carrusel-auto-flecha.izquierda {
+  left: 12px;
+}
+
+.carrusel-auto-flecha.derecha {
+  right: 12px;
+}
+
+.carrusel-auto-puntos {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.carrusel-auto-puntos button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0;
+}
+
+.carrusel-auto-puntos button.activo {
+  background: #fff;
+}
 .reviews {
   width: 100%;
   margin-top: 50px;
@@ -490,4 +570,10 @@ footer nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+footer nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
