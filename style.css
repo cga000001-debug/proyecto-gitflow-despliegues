@@ -137,6 +137,7 @@ body {
   max-width: 100%;
   margin: 0 auto;
 }
+
 #form_newsletter {
   display: flex;
   justify-content: center;
@@ -162,11 +163,11 @@ body {
 }
 
 .field-group {
-  width: 429px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
+    width: 429px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .title {
@@ -219,22 +220,22 @@ body {
 }
 
 .input::placeholder {
-  color: var(--Text-Default-Tertiary);
+    color: var(--Text-Default-Tertiary);
 }
 
 .checkbox-group {
-  width: 429px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    width: 429px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .checkbox-row {
-  min-width: 120px;
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  cursor: pointer;
+    min-width: 120px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
 }
 
 .checkbox-input {
@@ -285,26 +286,26 @@ body {
 }
 
 .button-row {
-  width: 429px;
-  display: inline-flex;
-  align-items: center;
-  gap: 16px;
+    width: 429px;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .button-primary {
-  flex: 1 1 0;
-  padding: 12px;
-  background: var(--Background-Brand-Default);
-  border: none;
-  outline: 1px var(--Border-Brand-Default) solid;
-  outline-offset: -1px;
-  border-radius: 8px;
-  color: var(--Text-Brand-On-Brand);
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 400;
-  line-height: 16px;
-  cursor: pointer;
+    flex: 1 1 0;
+    padding: 12px;
+    background: var(--Background-Brand-Default);
+    border: none;
+    outline: 1px var(--Border-Brand-Default) solid;
+    outline-offset: -1px;
+    border-radius: 8px;
+    color: var(--Text-Brand-On-Brand);
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 16px;
+    cursor: pointer;
 }
 
 .terms {
@@ -330,6 +331,7 @@ body {
   padding: 20px;
   margin-bottom: 20px;
 }
+
 .contact-info {
   width: 100%;
   max-width: 800px;
@@ -389,6 +391,7 @@ body {
   margin: 0;
   line-height: 1.5;
 }
+
 /* Galeria de imágenes*/
 :root {
   --alto-fila: 220px; /* alto de cada imagen */
@@ -396,23 +399,23 @@ body {
 }
 
 .titulo-galeria {
-  max-width: 640px;
-  margin: 0 auto 16px;
-  font-size: 1.5rem;
-  text-align: center;
+    max-width: 640px;
+    margin: 0 auto 16px;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .galeria {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: var(--espacio);
-  background: #fff;
-  border-radius: 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--espacio);
+    background: #fff;
+    border-radius: 8px;
 
-  /* Altura visible: una fila completa + un poco de la siguiente.
+    /* Altura visible: una fila completa + un poco de la siguiente.
      Cambia el 1.4 para ver más o menos de la fila de abajo. */
-  height: calc(var(--alto-fila) * 1.4 + var(--espacio) * 2);
-  overflow-y: auto;
+    height: calc(var(--alto-fila) * 1.4 + var(--espacio) * 2);
+    overflow-y: auto;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 2 imágenes por fila */
@@ -431,16 +434,16 @@ body {
 /*Footer CSS*/
 
 footer * {
-  margin: 0px;
-  padding: 0;
-  box-sizing: border-box;
-  border: none;
-  list-style: none;
-  text-decoration: none;
-  text-align: start;
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    text-align: start;
 
-  font-family: Roboto, sans-serif;
-  color: rgb(17, 17, 17);
+    font-family: Roboto, sans-serif;
+    color: rgb(17, 17, 17);
 }
 
 footer {
