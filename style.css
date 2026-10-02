@@ -128,6 +128,7 @@ body {
     right: 10px;
 }
 
+/* Formato de la newsletter */
 #content {
     width: 1200px;
     max-width: 100%;
@@ -240,15 +241,21 @@ body {
   height: 16px;
   margin: 0;
   flex-shrink: 0;
-  background: var(--Background-Brand-Default);
+  background: var(--Background-Default-Default);
+  outline: 1px var(--Border-Default-Default) solid;
   border-radius: 4px;
   position: relative;
   cursor: pointer;
 }
 
+.checkbox-input:checked {
+  background: var(--Background-Brand-Default);
+  outline: 1px var(--Border-Brand-Default) solid;
+}
+
 .checkbox-input::after {
   content: "";
-  display: block;
+  display: none;
   position: absolute;
   width: 10.67px;
   height: 7.33px;
@@ -258,6 +265,10 @@ body {
   border-top: none;
   border-right: none;
   transform: rotate(-45deg) translateY(-2px);
+}
+
+.checkbox-input:checked::after {
+  display: block;
 }
 
 .checkbox-label {
