@@ -1,128 +1,130 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Píxeles y Sombras</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="footer.css" />
-  </head>
 
-  <body>
-    <header class="mi-header">
-      <div class="logo">
-        <h1>Píxeles y Sombras</h1>
-      </div>
-      <nav class="menu">
-        <a href="index.html">Inicio</a>
-        <a href="gallery.html" class="activo">Galería</a>
-        <a href="aboutUs.html">About us</a>
-        <a href="contact.html">Contacto</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <title>Píxeles y Sombras</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="footer.css" />
+</head>
 
-    <div id="content">
-      <h1 class="titulo-galeria">Galería</h1>
-      <div class="galeria">
-        <img src="imagenes/imagen-galeria-vertical-1.jpg" alt="Foto 1" />
-        <img src="imagenes/imagen-galeria-vertical-2.jpg" alt="Foto 2" />
-        <img src="imagenes/imagen-galeria-vertical-3.jpg" alt="Foto 3" />
-        <img src="imagenes/imagen-galeria-vertical-4.jpg" alt="Foto 4" />
-        <img src="imagenes/imagen-galeria-vertical-5.jpg" alt="Foto 5" />
-        <img src="imagenes/imagen-galeria-vertical-6.jpg" alt="Foto 6" />
-        <img src="imagenes/imagen-galeria-vertical-7.jpg" alt="Foto 7" />
-        <img src="imagenes/imagen-galeria-vertical-8.jpg" alt="Foto 8" />
-      </div>
+<body>
+  <header class="mi-header">
+    <div class="logo">
+      <h1>Píxeles y Sombras</h1>
     </div>
+    <nav class="menu">
+      <a href="index.html">Inicio</a>
+      <a href="gallery.html" class="activo">Galería</a>
+      <a href="aboutUs.html">About us</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </header>
 
-    <div id="content">
-      <section class="carrusel">
-        <div class="carrusel-track">
-          <div class="slide">
-            <img src="imagenes/carrusel-1.png" alt="" />
-          </div>
+  <div id="content">
+    <h1 class="titulo-galeria">Galería</h1>
+    <div class="galeria">
+      <img src="imagenes/imagen-galeria-vertical-1.jpg" alt="Foto 1" />
+      <img src="imagenes/imagen-galeria-vertical-2.jpg" alt="Foto 2" />
+      <img src="imagenes/imagen-galeria-vertical-3.jpg" alt="Foto 3" />
+      <img src="imagenes/imagen-galeria-vertical-4.jpg" alt="Foto 4" />
+      <img src="imagenes/imagen-galeria-vertical-5.jpg" alt="Foto 5" />
+      <img src="imagenes/imagen-galeria-vertical-6.jpg" alt="Foto 6" />
+      <img src="imagenes/imagen-galeria-vertical-7.jpg" alt="Foto 7" />
+      <img src="imagenes/imagen-galeria-vertical-8.jpg" alt="Foto 8" />
+    </div>
+  </div>
 
-          <div class="slide">
-            <img src="imagenes/carrusel-2.png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="imagenes/carrusel-3.png" alt="" />
-          </div>
+  <div id="content">
+    <section class="carrusel">
+      <div class="carrusel-track">
+        <div class="slide">
+          <img src="imagenes/carrusel-1.png" alt="" />
         </div>
 
-        <button class="anterior">❮</button>
-        <button class="next">❯</button>
+        <div class="slide">
+          <img src="imagenes/carrusel-2.png" alt="" />
+        </div>
 
-        <script>
-          const track = document.querySelector(".carrusel-track");
-          const slides = document.querySelectorAll(".slide");
+        <div class="slide">
+          <img src="imagenes/carrusel-3.png" alt="" />
+        </div>
+      </div>
 
-          const previousButton = document.querySelector(".anterior");
-          const nextButton = document.querySelector(".next");
+      <button class="anterior">❮</button>
+      <button class="next">❯</button>
 
-          let currentSlide = 0;
+      <script>
+        const track = document.querySelector(".carrusel-track");
+        const slides = document.querySelectorAll(".slide");
 
-          function showSlide() {
-            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        const previousButton = document.querySelector(".anterior");
+        const nextButton = document.querySelector(".next");
+
+        let currentSlide = 0;
+
+        function showSlide() {
+          track.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        nextButton.addEventListener("click", function () {
+          currentSlide++;
+
+          if (currentSlide >= slides.length) {
+            currentSlide = 0;
           }
 
-          nextButton.addEventListener("click", function () {
-            currentSlide++;
+          showSlide();
+        });
 
-            if (currentSlide >= slides.length) {
-              currentSlide = 0;
-            }
+        previousButton.addEventListener("click", function () {
+          currentSlide--;
 
-            showSlide();
-          });
+          if (currentSlide < 0) {
+            currentSlide = slides.length - 1;
+          }
 
-          previousButton.addEventListener("click", function () {
-            currentSlide--;
+          showSlide();
+        });
+      </script>
+    </section>
+    <section class="galeria2">
+      <div class="div1">
+        <img src="./imagenes/carrusel-automatico-1.jpg" alt="foticos" />
+      </div>
+      <div class="div2">
+        <img src="./imagenes/carrusel-automatico-2.jpg" alt="foticos" />
+      </div>
+      <div class="div3">
+        <img src="./imagenes/carrusel-automatico-3.jpg" alt="foticos" />
+      </div>
+      <div class="div4">
+        <img src="./imagenes/carrusel-automatico-4.jpg" alt="foticos" />
+      </div>
+      <div class="div5">
+        <img src="./imagenes/carrusel-automatico-5.jpg" alt="foticos" />
+      </div>
+      <div class="div6">
+        <img src="./imagenes/carrusel-automatico-6.jpg" alt="foticos" />
+      </div>
+      <div class="div7">
+        <img src="./imagenes/carrusel-automatico-7.jpg" alt="foticos" />
+      </div>
+      <div class="div8">
+        <img src="./imagenes/carrusel-automatico-8.jpg" alt="foticos" />
+      </div>
+    </section>
+  </div>
+  <footer>
+    <img src="" alt="Píxeles y Sombras" />
+    <nav>
+      <a href="./index.html">Inicio</a>
+      <a href="./gallery.html">Galería</a>
+      <a href="./aboutUs.html">About Us</a>
+      <a href="./contact.html">Contacto</a>
+    </nav>
+    <p class="version">Versión 1.0.0</p>
+  </footer>
+</body>
 
-            if (currentSlide < 0) {
-              currentSlide = slides.length - 1;
-            }
-
-            showSlide();
-          });
-        </script>
-      </section>
-      <section class="galeria2">
-        <div class="div1">
-          <img src="./imagenes/carrusel-automatico-1.jpg" alt="foticos" />
-        </div>
-        <div class="div2">
-          <img src="./imagenes/carrusel-automatico-2.jpg" alt="foticos" />
-        </div>
-        <div class="div3">
-          <img src="./imagenes/carrusel-automatico-3.jpg" alt="foticos" />
-        </div>
-        <div class="div4">
-          <img src="./imagenes/carrusel-automatico-4.jpg" alt="foticos" />
-        </div>
-        <div class="div5">
-          <img src="./imagenes/carrusel-automatico-5.jpg" alt="foticos" />
-        </div>
-        <div class="div6">
-          <img src="./imagenes/carrusel-automatico-6.jpg" alt="foticos" />
-        </div>
-        <div class="div7">
-          <img src="./imagenes/carrusel-automatico-7.jpg" alt="foticos" />
-        </div>
-        <div class="div8">
-          <img src="./imagenes/carrusel-automatico-8.jpg" alt="foticos" />
-        </div>
-      </section>
-    </div>
-    <footer>
-      <img src="" alt="Píxeles y Sombras" />
-      <nav>
-        <a href="./index.html">Home</a>
-        <a href="./aboutUs.html">About Us</a>
-        <a href="./gallery.html">Gallery</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
-      <p class="version">Versión 1.0.0</p>
-    </footer>
-  </body>
 </html>
