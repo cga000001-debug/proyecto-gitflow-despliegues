@@ -6,6 +6,7 @@ En el sitio web pueden verse los trabajos realizados en el estudio a través de 
 https://github.com/cga000001-debug/proyecto-gitflow-despliegues/deployments/github-pages
 
 # Estructura del proyecto.
+````
 proyecto-gitflow-despliegues/
 |- imagenes/
 |- app/
@@ -16,7 +17,7 @@ proyecto-gitflow-despliegues/
 |   |- style.css
 |   |- carrusel-automatico.js
 |- README.md
-
+````
 # Historial de las versiones realmente publicadas y cambios principales de cada una.
 
 | Versión | Modificaciones |
