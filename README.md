@@ -31,4 +31,4 @@ proyecto-gitflow-despliegues/
 # Enlace al tablero del tablero Kanban.
 https://github.com/users/cga000001-debug/projects/1
 
-## Versión 2.0.0
+## Versión 2.0.1
