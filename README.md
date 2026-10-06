@@ -1,9 +1,5 @@
-# Nombre, temática y descripción del proyecto.
-Píxeles y Sombras es el sitio web de un estudio de fotografía que ofrece resultados profesionales para capturas las mejores instantáneas.
-En el sitio web pueden verse los trabajos realizados en el estudio a través de diversas galerías de imágenes, las opiniones de nuestros clientes y la suscripción a nuestra newsletter. También está dipsonible un mapa con la ubicación del estudio y una entrada con nuestra historia. Puedes contactar con el estudio a través del formuario de contacto.
+# proyecto-gitflow-despliegues
 
-# URL del sitio publicado con GitHub Pages.
-https://github.com/cga000001-debug/proyecto-gitflow-despliegues/deployments/github-pages
 
 # Estructura del proyecto.
 ````
